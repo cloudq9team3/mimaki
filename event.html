@@ -1,13 +1,15 @@
 <html>
 <script src="jquery.1.6.4.min.js"></script>
-<body>CLICK ME!</body>
+<body>
+	<div>CLICK ME!</div>
+</body>
 </html>
 <script>
 // jquery code
-$('document').ready( function(){
-	$('div').mousout( function(){})
-	$('div').mouseover( function(){})
-	
-
-
+$( document).ready( function() { 
+	$('div').mouseover(function() {	
+		console.log("mouseover!")
+		$('div').click(function() {console.log("Click!")})	
+	})
+})
 </script>
